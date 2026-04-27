@@ -24,3 +24,11 @@ export const inkAddresses: NetworkAddresses = {
     ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
   },
 };
+
+export const inkSepoliaAddresses: NetworkAddresses = {
+  name: 'InkSepolia',
+  chainId: ChainId.ink_sepolia,
+  addresses: {
+    TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062'
+  },
+};
