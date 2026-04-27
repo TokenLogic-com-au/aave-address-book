@@ -18491,6 +18491,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
+      "name": "GnosisSafeProxy"
     }
   }
 }
