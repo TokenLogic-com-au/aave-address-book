@@ -6,7 +6,7 @@ const batchConfig = {batch: {multicall: true}};
 
 // Chains that don't work with Alchemy — use public RPC directly
 const PUBLIC_RPC_CHAINS: Partial<Record<number, string>> = {
-  [ChainId.xLayer]: 'https://rpc.xlayer.tech',
+  [ChainId.xLayer]: 'https://xlayerrpc.okx.com',
 };
 
 export function getClient(chainId: number) {
@@ -14,8 +14,7 @@ export function getClient(chainId: number) {
   if (publicRpc) {
     return createPublicClient({
       chain: ChainList[chainId],
-      transport: http(publicRpc, commonConfig),
-      ...batchConfig,
+      transport: http(publicRpc, {...commonConfig, batch: false}),
     });
   }
   return rpcEnvGetClient(chainId, {
