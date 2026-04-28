@@ -4,7 +4,6 @@ import {ChainId, getClient as rpcEnvGetClient} from '@bgd-labs/toolbox';
 const commonConfig: HttpTransportConfig = {timeout: 30_000, batch: true};
 const batchConfig = {batch: {multicall: true}};
 
-// Chains not supported by Alchemy — skip alchemyKey so toolbox falls back to QuickNode or public RPC
 const ALCHEMY_UNSUPPORTED_CHAINS = new Set<number>([ChainId.xLayer]);
 
 export function getClient(chainId: number) {
