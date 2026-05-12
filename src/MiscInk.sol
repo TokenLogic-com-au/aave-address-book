@@ -5,4 +5,10 @@ pragma solidity >=0.6.0;
 library MiscInk {
   // https://explorer.inkonchain.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
+
+  // https://explorer.inkonchain.com/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
+  address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
+
+  // https://explorer.inkonchain.com/address/0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D
+  address internal constant MERKL_DISTRIBUTION_SAFE = 0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D;
 }
