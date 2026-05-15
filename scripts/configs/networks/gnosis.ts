@@ -1,6 +1,6 @@
 import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/toolbox';
-import {NetworkAddresses} from '../types';
+import {NetworkAddresses} from 'scripts/configs/types';
 
 export const gnosisAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
@@ -37,6 +37,7 @@ export const gnosisAddresses: NetworkAddresses<{
     AGENT_HUB_AUTOMATION: '0x5f65e68ddb5cfdb5b64bd8562dba08af6b26818c',
     RANGE_VALIDATION_MODULE: '0x9240a6669cc4782fc98620212862df5cb2e0df10',
     BUDGET_INCENTIVE_SAFE: '0x66Ac7223048037826e12cef9a848199e31AEFabE',
-    MERKL_DISTRIBUTION_SAFE: '0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D'
+    MERKL_DISTRIBUTION_SAFE: '0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D',
+    ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
   },
 };

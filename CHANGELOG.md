@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.49.11](https://github.com/aave-dao/aave-address-book/compare/v4.49.10...v4.49.11) (2026-05-15)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1381](https://github.com/aave-dao/aave-address-book/issues/1381)) ([1f88ec1](https://github.com/aave-dao/aave-address-book/commit/1f88ec131bdea1fc24cc272f16b8a490f0443935))
+
+## [4.49.10](https://github.com/aave-dao/aave-address-book/compare/v4.49.9...v4.49.10) (2026-05-10)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1379](https://github.com/aave-dao/aave-address-book/issues/1379)) ([06dd579](https://github.com/aave-dao/aave-address-book/commit/06dd57954698c6325affa8e4d77ab3ea0c0e5684))
+
+## [4.49.9](https://github.com/aave-dao/aave-address-book/compare/v4.49.8...v4.49.9) (2026-05-07)
+
+
+### Bug Fixes
+
+* rename eSpokes & small fixes ([#1368](https://github.com/aave-dao/aave-address-book/issues/1368)) ([4ee7b50](https://github.com/aave-dao/aave-address-book/commit/4ee7b505d40760f48bcfdc4edd5fe3d532ec88d2))
+
+## [4.49.8](https://github.com/aave-dao/aave-address-book/compare/v4.49.7...v4.49.8) (2026-05-01)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1375](https://github.com/aave-dao/aave-address-book/issues/1375)) ([2b5f43f](https://github.com/aave-dao/aave-address-book/commit/2b5f43fb2543790cbe8faf459f4b53a9cca0334a))
+
 ## [4.49.7](https://github.com/aave-dao/aave-address-book/compare/v4.49.6...v4.49.7) (2026-04-25)
 
 

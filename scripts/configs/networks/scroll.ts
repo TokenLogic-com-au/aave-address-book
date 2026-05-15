@@ -1,6 +1,6 @@
 import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/toolbox';
-import {NetworkAddresses} from '../types';
+import {NetworkAddresses} from 'scripts/configs/types';
 
 export const scrollAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
@@ -25,5 +25,6 @@ export const scrollAddresses: NetworkAddresses<{
     REWARD_STEWARD: '0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE',
     BUDGET_INCENTIVE_SAFE: '0x66Ac7223048037826e12cef9a848199e31AEFabE',
     MERKL_DISTRIBUTION_SAFE: '0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D',
+    ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
   },
 };
