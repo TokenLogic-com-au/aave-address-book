@@ -52,8 +52,8 @@ library AaveV3Base {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x7354Dc700A1A2ab9622f2292B60Ca1ceD5B204D0;
 
-  // https://basescan.org/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
-  address internal constant RISK_STEWARD = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
+  // https://basescan.org/address/0x494bcfd3937aBdebEF3D2c2eae1CE8A2Fb629032
+  address internal constant RISK_STEWARD = 0x494bcfd3937aBdebEF3D2c2eae1CE8A2Fb629032;
 
   // https://basescan.org/address/0xB892202d9Ce2C16C565A492a5168689b215Eb269
   address internal constant EDGE_RISK_STEWARD_CAPS = 0xB892202d9Ce2C16C565A492a5168689b215Eb269;
@@ -85,8 +85,8 @@ library AaveV3Base {
   address internal constant LEGACY_STATIC_A_TOKEN_ORACLE =
     0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
 
-  // https://basescan.org/address/0x98436999cA3bE615681062fE0a228f2CEC352DF7
-  address internal constant CONFIG_ENGINE = 0x98436999cA3bE615681062fE0a228f2CEC352DF7;
+  // https://basescan.org/address/0xa5008BC7Fd697F458482205Ed52Dc51e91d37446
+  address internal constant CONFIG_ENGINE = 0xa5008BC7Fd697F458482205Ed52Dc51e91d37446;
 
   // https://basescan.org/address/0x39e97c588B2907Fb67F44fea256Ae3BA064207C5
   address internal constant L2_ENCODER = 0x39e97c588B2907Fb67F44fea256Ae3BA064207C5;
@@ -98,8 +98,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B;
 
-  // https://basescan.org/address/0xb84A20e848baE3e13897934bB4e74E2225f4546B
-  address internal constant UI_POOL_DATA_PROVIDER = 0xb84A20e848baE3e13897934bB4e74E2225f4546B;
+  // https://basescan.org/address/0x045950811Ed7B157158B4316F0e2F04726E3b4fa
+  address internal constant UI_POOL_DATA_PROVIDER = 0x045950811Ed7B157158B4316F0e2F04726E3b4fa;
 
   // https://basescan.org/address/0x5779b29B0a34577d927E8D511B595ef9abbFAE82
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;

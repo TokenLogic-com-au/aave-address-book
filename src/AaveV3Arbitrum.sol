@@ -52,8 +52,8 @@ library AaveV3Arbitrum {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xC0442C25FE517ac37D6a0D485446307D97d24712;
 
-  // https://arbiscan.io/address/0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8
-  address internal constant RISK_STEWARD = 0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8;
+  // https://arbiscan.io/address/0xC5762E5A5c12886D4F6768549A9C605823d029E9
+  address internal constant RISK_STEWARD = 0xC5762E5A5c12886D4F6768549A9C605823d029E9;
 
   // https://arbiscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
@@ -70,8 +70,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
-  // https://arbiscan.io/address/0x771051750e4de7f178370Bae3AaA58f90778c9B9
-  address internal constant CONFIG_ENGINE = 0x771051750e4de7f178370Bae3AaA58f90778c9B9;
+  // https://arbiscan.io/address/0xFaEe011b679330A42fFc33c6444800F78b69Dc58
+  address internal constant CONFIG_ENGINE = 0xFaEe011b679330A42fFc33c6444800F78b69Dc58;
 
   // https://arbiscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -98,8 +98,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x68100bD5345eA474D93577127C11F39FF8463e93
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x68100bD5345eA474D93577127C11F39FF8463e93;
 
-  // https://arbiscan.io/address/0x13c833256BD767da2320d727a3691BAff3770E39
-  address internal constant UI_POOL_DATA_PROVIDER = 0x13c833256BD767da2320d727a3691BAff3770E39;
+  // https://arbiscan.io/address/0x9A8d4D93dEB59e0457F179e6B69A9073D7e2E5Db
+  address internal constant UI_POOL_DATA_PROVIDER = 0x9A8d4D93dEB59e0457F179e6B69A9073D7e2E5Db;
 
   // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;

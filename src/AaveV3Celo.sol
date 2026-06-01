@@ -52,8 +52,8 @@ library AaveV3Celo {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x7e16eeBAC3276515EDD0BC54E7241668eF015E33;
 
-  // https://celoscan.io/address/0x8f30ADaA6950b31f675bF8a709Bc23F55aa24735
-  address internal constant CONFIG_ENGINE = 0x8f30ADaA6950b31f675bF8a709Bc23F55aa24735;
+  // https://celoscan.io/address/0x598e91d0C3459121a23fEa88f8B7E5ce7232a528
+  address internal constant CONFIG_ENGINE = 0x598e91d0C3459121a23fEa88f8B7E5ce7232a528;
 
   // https://celoscan.io/address/0xB4B6939D0804DCE8d0Ac3e59b2eD5C072829d56b
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -62,8 +62,8 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099;
 
-  // https://celoscan.io/address/0xe48424542b30b0b8D1Dc09099aceE407f40b4491
-  address internal constant UI_POOL_DATA_PROVIDER = 0xe48424542b30b0b8D1Dc09099aceE407f40b4491;
+  // https://celoscan.io/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
+  address internal constant UI_POOL_DATA_PROVIDER = 0x04a8D477eE202aDCE1682F5902e1160455205b12;
 
   // https://celoscan.io/address/0xB91DA65093d54a1a7cb0fe684860F568A5E57123
   address internal constant WALLET_BALANCE_PROVIDER = 0xB91DA65093d54a1a7cb0fe684860F568A5E57123;
@@ -71,8 +71,8 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x2b33073B94243304bCb4dfFA6b624afA5BAA414D
   address internal constant STATA_FACTORY = 0x2b33073B94243304bCb4dfFA6b624afA5BAA414D;
 
-  // https://celoscan.io/address/0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c
-  address internal constant RISK_STEWARD = 0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c;
+  // https://celoscan.io/address/0xF73F2634b43344d86921DA3391d4EF0d5675Dd63
+  address internal constant RISK_STEWARD = 0xF73F2634b43344d86921DA3391d4EF0d5675Dd63;
 
   // https://celoscan.io/address/0x886b90e5d7DA22000f1652740D3EC51566AAbe40
   address internal constant DUST_BIN = 0x886b90e5d7DA22000f1652740D3EC51566AAbe40;

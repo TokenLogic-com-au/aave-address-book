@@ -52,11 +52,11 @@ library AaveV3Linea {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xb5E324e16402deA38D8Aed61c472f414d21F2046;
 
-  // https://lineascan.build/address/0x7e1f23bdFc7287AF276F77B5A867e85cf0377a31
-  address internal constant CONFIG_ENGINE = 0x7e1f23bdFc7287AF276F77B5A867e85cf0377a31;
+  // https://lineascan.build/address/0x4ad4a620EEaE490d5872F69845104fAeFB67EFc4
+  address internal constant CONFIG_ENGINE = 0x4ad4a620EEaE490d5872F69845104fAeFB67EFc4;
 
-  // https://lineascan.build/address/0xBDF2e1A49894A306Eb76b89504928b3f509A3a16
-  address internal constant RISK_STEWARD = 0xBDF2e1A49894A306Eb76b89504928b3f509A3a16;
+  // https://lineascan.build/address/0xE77aF99210AC55939e1ba0bFC6A9a20E1Da73b25
+  address internal constant RISK_STEWARD = 0xE77aF99210AC55939e1ba0bFC6A9a20E1Da73b25;
 
   // https://lineascan.build/address/0x96dFCCB3F9ACDaF6c8f8a35E814023C3484d1eA2
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -65,8 +65,8 @@ library AaveV3Linea {
   // https://lineascan.build/address/0x117684358D990E42Eb1649E7e8C4691951dc1E71
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x117684358D990E42Eb1649E7e8C4691951dc1E71;
 
-  // https://lineascan.build/address/0x898813Dd328BD3D7353c77aD0B1C0E10F3773E29
-  address internal constant UI_POOL_DATA_PROVIDER = 0x898813Dd328BD3D7353c77aD0B1C0E10F3773E29;
+  // https://lineascan.build/address/0x070B4C70797456cF97B6958863c894E38df4f345
+  address internal constant UI_POOL_DATA_PROVIDER = 0x070B4C70797456cF97B6958863c894E38df4f345;
 
   // https://lineascan.build/address/0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D
   address internal constant WALLET_BALANCE_PROVIDER = 0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D;

@@ -52,8 +52,8 @@ library AaveV3Mantle {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x604174a3bA9228F3c7823d2E1aAA17A90E06C160;
 
-  // https://mantlescan.xyz/address/0x70Bf6EC6Fca41a7d08dCBB9909985AC0A4510B5E
-  address internal constant CONFIG_ENGINE = 0x70Bf6EC6Fca41a7d08dCBB9909985AC0A4510B5E;
+  // https://mantlescan.xyz/address/0xb04280b09F47cFd81906817505F24ceFE1BA86D2
+  address internal constant CONFIG_ENGINE = 0xb04280b09F47cFd81906817505F24ceFE1BA86D2;
 
   // https://mantlescan.xyz/address/0x54114591963CF60EF3aA63bEfD6eC263D98145a4
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -62,8 +62,8 @@ library AaveV3Mantle {
   // https://mantlescan.xyz/address/0x04EEC4892Ec41A056C66787211aE81A24460fF02
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x04EEC4892Ec41A056C66787211aE81A24460fF02;
 
-  // https://mantlescan.xyz/address/0x077df1990bF703fb1687515747ddb13621133649
-  address internal constant UI_POOL_DATA_PROVIDER = 0x077df1990bF703fb1687515747ddb13621133649;
+  // https://mantlescan.xyz/address/0x15196D30Bc37d2fc5C718ffCd9d7687D76f3Ad1f
+  address internal constant UI_POOL_DATA_PROVIDER = 0x15196D30Bc37d2fc5C718ffCd9d7687D76f3Ad1f;
 
   // https://mantlescan.xyz/address/0x91855bbfE5F19c245C3dA9B9fC954394a6f9da8f
   address internal constant WALLET_BALANCE_PROVIDER = 0x91855bbfE5F19c245C3dA9B9fC954394a6f9da8f;
@@ -77,8 +77,8 @@ library AaveV3Mantle {
   // https://mantlescan.xyz/address/0xfd4Eb6c531A34EC3A74C99892C5511fe6d126F91
   address internal constant STATA_FACTORY = 0xfd4Eb6c531A34EC3A74C99892C5511fe6d126F91;
 
-  // https://mantlescan.xyz/address/0xa35358159F42E11C5689C68f181a71d51BB22de3
-  address internal constant RISK_STEWARD = 0xa35358159F42E11C5689C68f181a71d51BB22de3;
+  // https://mantlescan.xyz/address/0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442
+  address internal constant RISK_STEWARD = 0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442;
 
   // https://mantlescan.xyz/address/0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601
   address internal constant DUST_BIN = 0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601;
