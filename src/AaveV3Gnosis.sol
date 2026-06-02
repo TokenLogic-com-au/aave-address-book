@@ -52,8 +52,8 @@ library AaveV3Gnosis {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xaE34350Ba3DE25CEEb9cE718f12DA4c26D6d4F71;
 
-  // https://gnosisscan.io/address/0x984B710D22730f799312513A10C1382e9D1Fa689
-  address internal constant CONFIG_ENGINE = 0x984B710D22730f799312513A10C1382e9D1Fa689;
+  // https://gnosisscan.io/address/0xC563424DA59CC173D6de88a2BdA68C5981e4CA66
+  address internal constant CONFIG_ENGINE = 0xC563424DA59CC173D6de88a2BdA68C5981e4CA66;
 
   // https://gnosisscan.io/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -62,8 +62,8 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
-  // https://gnosisscan.io/address/0xD14F4d3495d5096a31F33605F2D0803bbe2EAdc0
-  address internal constant UI_POOL_DATA_PROVIDER = 0xD14F4d3495d5096a31F33605F2D0803bbe2EAdc0;
+  // https://gnosisscan.io/address/0x0C6BC4a12039788be08F87e87Cff87FEDbd1D386
+  address internal constant UI_POOL_DATA_PROVIDER = 0x0C6BC4a12039788be08F87e87Cff87FEDbd1D386;
 
   // https://gnosisscan.io/address/0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D
   address internal constant WALLET_BALANCE_PROVIDER = 0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D;
@@ -71,8 +71,8 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x721B9abAb6511b46b9ee83A1aba23BDAcB004149
   address internal constant WETH_GATEWAY = 0x721B9abAb6511b46b9ee83A1aba23BDAcB004149;
 
-  // https://gnosisscan.io/address/0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55
-  address internal constant RISK_STEWARD = 0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55;
+  // https://gnosisscan.io/address/0xd7f6CbA78FcE1799C29460765c97D7792eeD0756
+  address internal constant RISK_STEWARD = 0xd7f6CbA78FcE1799C29460765c97D7792eeD0756;
 
   // https://gnosisscan.io/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
   address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =

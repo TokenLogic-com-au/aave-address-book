@@ -61,6 +61,7 @@ async function verifyProxy(item: ListItem) {
 
 async function checkVerified(item: ListItem) {
   try {
+    await sleep(1000);
     const source = await getSourceCode({
       chainId: item.chainId,
       apiKey: process.env.ETHERSCAN_API_KEY,
@@ -95,6 +96,7 @@ function getApiUrl(chainId: number) {
   if (chainId === ChainId.bob) return `https://explorer.gobob.xyz/api`;
   if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
   if (chainId === ChainId.scroll) return `https://scroll.blockscout.com/api`;
+  if (chainId === ChainId.xLayer) return `https://www.oklink.com/api`;
   return getExplorer(chainId).api;
 }
 

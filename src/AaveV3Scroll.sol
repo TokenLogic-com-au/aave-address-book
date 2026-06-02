@@ -55,11 +55,11 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x8714E5ED2d8edD4E88eFf66637C3FE8eCf2B8C40
   address internal constant L2_ENCODER = 0x8714E5ED2d8edD4E88eFf66637C3FE8eCf2B8C40;
 
-  // https://scrollscan.com/address/0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69
-  address internal constant RISK_STEWARD = 0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69;
+  // https://scrollscan.com/address/0xc524A770ae73e57F0295aA48fd7605927a628B3b
+  address internal constant RISK_STEWARD = 0xc524A770ae73e57F0295aA48fd7605927a628B3b;
 
-  // https://scrollscan.com/address/0xF487B5787f79e2284BA755F094F1F8fEB17B5E79
-  address internal constant CONFIG_ENGINE = 0xF487B5787f79e2284BA755F094F1F8fEB17B5E79;
+  // https://scrollscan.com/address/0x6A7192c55E9298874e49675A63D5ebb11eD99a66
+  address internal constant CONFIG_ENGINE = 0x6A7192c55E9298874e49675A63D5ebb11eD99a66;
 
   // https://scrollscan.com/address/0xFBedc64AeE24921cb43004312B9eF367a4162b57
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -68,8 +68,8 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
-  // https://scrollscan.com/address/0x6926c8195a8840099Daa643C2d9aDE18C0D233d9
-  address internal constant UI_POOL_DATA_PROVIDER = 0x6926c8195a8840099Daa643C2d9aDE18C0D233d9;
+  // https://scrollscan.com/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+  address internal constant UI_POOL_DATA_PROVIDER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
   // https://scrollscan.com/address/0xE51642875Af07Fea1B03d821E41a9DB24bC4447E
   address internal constant WALLET_BALANCE_PROVIDER = 0xE51642875Af07Fea1B03d821E41a9DB24bC4447E;

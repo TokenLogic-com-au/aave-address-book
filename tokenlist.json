@@ -3502,6 +3502,19 @@
     },
     {
       "chainId": 1,
+      "address": "0x2DF6DfbD281F127a3690c87E4572076778a9EDa5",
+      "name": "Wrapped Aave Ethereum USDG",
+      "decimals": 6,
+      "symbol": "waEthUSDG",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+        "underlyingAToken": "0x7c0477d085ECb607CF8429f3eC91Ae5E1e460F4F"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0",
       "name": "PT Ethena USDe 7MAY2026",
       "decimals": 18,
@@ -4282,6 +4295,20 @@
       "decimals": 6,
       "symbol": "stataPolUSDCn",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+        "underlyingAToken": "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD"
+      }
+    },
+    {
+      "chainId": 137,
+      "address": "0x79261231698B26Ed9085b59ae89d59843Ae925a8",
+      "name": "Wrapped Aave Polygon USDCn",
+      "decimals": 6,
+      "symbol": "waPolUSDCn",
+      "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -10611,6 +10638,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 172 },
-  "timestamp": "2026-05-01T02:40:19.495Z"
+  "version": { "major": 3, "minor": 0, "patch": 174 },
+  "timestamp": "2026-06-01T00:45:42.099Z"
 }

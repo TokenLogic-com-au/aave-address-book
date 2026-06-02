@@ -52,11 +52,11 @@ library AaveV3XLayer {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xF9e48edc704BDF494309cA457BCea4c0696f591d;
 
-  // https://www.oklink.com/xlayer/address/0x2eb21BCE2C5D59a67C648BfD2e700AdDB752DD7B
-  address internal constant CONFIG_ENGINE = 0x2eb21BCE2C5D59a67C648BfD2e700AdDB752DD7B;
+  // https://www.oklink.com/xlayer/address/0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F
+  address internal constant CONFIG_ENGINE = 0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F;
 
-  // https://www.oklink.com/xlayer/address/0xb5970A521073ADE4836dD4A24854Eb387a67c5C8
-  address internal constant RISK_STEWARD = 0xb5970A521073ADE4836dD4A24854Eb387a67c5C8;
+  // https://www.oklink.com/xlayer/address/0x7D0219C7037819B3F5d73E235C595189C3F8c224
+  address internal constant RISK_STEWARD = 0x7D0219C7037819B3F5d73E235C595189C3F8c224;
 
   // https://www.oklink.com/xlayer/address/0x0f2b21fd713379bb406bE2eA956EaFe55197DE9C
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -65,8 +65,8 @@ library AaveV3XLayer {
   // https://www.oklink.com/xlayer/address/0xd50437FDC430FDA64f1f4C87181995ad6CA2eaA3
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xd50437FDC430FDA64f1f4C87181995ad6CA2eaA3;
 
-  // https://www.oklink.com/xlayer/address/0x7E195b3fc91fDd51A9CD5070cC044602212Ac983
-  address internal constant UI_POOL_DATA_PROVIDER = 0x7E195b3fc91fDd51A9CD5070cC044602212Ac983;
+  // https://www.oklink.com/xlayer/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
 
   // https://www.oklink.com/xlayer/address/0x421117D7319E96d831972b3F7e970bbfe29C4F21
   address internal constant WALLET_BALANCE_PROVIDER = 0x421117D7319E96d831972b3F7e970bbfe29C4F21;

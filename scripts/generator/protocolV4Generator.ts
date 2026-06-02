@@ -1,10 +1,11 @@
 import {appendFileSync, writeFileSync} from 'fs';
-import {Hex} from 'viem';
+import {Hex, zeroAddress} from 'viem';
 import {Addresses, V4Config} from 'scripts/configs/types';
 import {
   generateJsConstants,
   generateJsObject,
   generateSolidityConstants,
+  keyToVar,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
@@ -12,6 +13,7 @@ import {
 import {getClient} from 'scripts/clients';
 import {fetchHubAssets, FetchedHubAsset} from 'scripts/generator/protocol-v4-generator/fetchHubAssets';
 import {fetchTokenizationSpokes} from 'scripts/generator/protocol-v4-generator/fetchTokenizationSpokes';
+import {fetchAllSpokes} from 'scripts/generator/protocol-v4-generator/fetchAllSpokes';
 import {fetchPriceFeeds, FetchedPriceFeed} from 'scripts/generator/protocol-v4-generator/fetchPriceFeeds';
 
 const V4_INTERFACE_REGISTRY: Record<string, string> = {
@@ -166,6 +168,56 @@ function buildAssetsAddresses(resolvedHubs: Record<string, ResolvedHub>): {
   return {solAddresses, jsObject};
 }
 
+function buildSolidityGetter(
+  fnName: string,
+  iface: string,
+  varName: string,
+  sibLibraryName: string,
+  keys: string[],
+): string {
+  const body = [
+    `    ${iface}[] memory ${varName} = new ${iface}[](${keys.length});`,
+    ...keys.map((key, i) => `    ${varName}[${i}] = ${sibLibraryName}.${keyToVar(key)};`),
+    `    return ${varName};`,
+  ].join('\n');
+  return `  function ${fnName}() internal pure returns (${iface}[] memory) {\n${body}\n  }`;
+}
+
+function buildTsGetter(exportName: string, sourceObjectName: string, keys: string[]): string {
+  const items = keys.map((key) => `${sourceObjectName}.${keyToVar(key)}`).join(', ');
+  return `export const ${exportName} = [${items}] as const;`;
+}
+
+function buildSolidityRawGetter(
+  fnName: string,
+  varName: string,
+  entries: {libraryName: string; key: string}[],
+  trailing: Hex[] = [],
+): string {
+  const total = entries.length + trailing.length;
+  const body = [
+    `    address[] memory ${varName} = new address[](${total});`,
+    ...entries.map(
+      (e, i) => `    ${varName}[${i}] = address(${e.libraryName}.${keyToVar(e.key)});`,
+    ),
+    ...trailing.map((addr, i) => `    ${varName}[${entries.length + i}] = ${addr};`),
+    `    return ${varName};`,
+  ].join('\n');
+  return `  function ${fnName}() internal pure returns (address[] memory) {\n${body}\n  }`;
+}
+
+function buildTsRawGetter(
+  exportName: string,
+  entries: {sourceObjectName: string; key: string}[],
+  trailing: Hex[] = [],
+): string {
+  const items = [
+    ...entries.map((e) => `${e.sourceObjectName}.${keyToVar(e.key)}`),
+    ...trailing.map((addr) => `'${addr}'`),
+  ].join(', ');
+  return `export const ${exportName} = [${items}] as const;`;
+}
+
 export async function generateProtocolV4Library(config: V4Config) {
   const client = getClient(config.chainId);
   if (!client) {
@@ -182,17 +234,21 @@ export async function generateProtocolV4Library(config: V4Config) {
     knownNonTokenizationSpokes.add(treasurySpoke.toLowerCase());
   }
 
-  // Fetch assets + tokenization spokes for each hub
+  // Fetch assets + tokenization spokes + all on-chain spokes for each hub
   const resolvedHubs: Record<string, ResolvedHub> = {};
+  const allOnChainSpokes: Hex[] = [];
   for (const [hubName, hubAddress] of Object.entries(config.hubs)) {
     const assets = await fetchHubAssets(client, hubAddress);
+    const hubSpokes = await fetchAllSpokes(client, hubAddress, assets);
     const tokSpokes = await fetchTokenizationSpokes(
       client,
       hubAddress,
       hubName,
       assets,
+      hubSpokes.spokesByAssetId,
       knownNonTokenizationSpokes,
     );
+    allOnChainSpokes.push(...hubSpokes.allSpokes);
     resolvedHubs[hubName] = {
       hub: hubAddress,
       assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)!})),
@@ -369,6 +425,94 @@ export async function generateProtocolV4Library(config: V4Config) {
       `./src/ts/${name}.ts`,
       `\nexport const ASSETS = ${JSON.stringify(assetsJsObject, null, 2)} as const;\n`,
     );
+  }
+
+  // Getters library: aggregated lookups that reuse the constants defined above
+  const hubGetterKeys = Object.keys(hubsAddresses).filter(
+    (key) => (hubsAddresses[key] as {value: Hex}).value !== zeroAddress,
+  );
+  const spokeGetterKeys = Object.keys(spokesByBaseKey).filter(
+    (key) => spokesByBaseKey[key] !== zeroAddress,
+  );
+  const tokSpokeGetterKeys = Object.keys(tokenSpokesAddresses).filter(
+    (key) => (tokenSpokesAddresses[key] as {value: Hex}).value !== zeroAddress,
+  );
+
+  const solGetterFns: string[] = [];
+  const tsGetterLines: string[] = [];
+
+  if (hubGetterKeys.length > 0) {
+    solGetterFns.push(
+      buildSolidityGetter('getAllHubs', 'IHub', 'hubs', `${name}Hubs`, hubGetterKeys),
+    );
+    tsGetterLines.push(buildTsGetter('ALL_HUBS', 'HUBS', hubGetterKeys));
+  }
+  if (spokeGetterKeys.length > 0) {
+    solGetterFns.push(
+      buildSolidityGetter('getAllSpokes', 'ISpoke', 'spokes', `${name}Spokes`, spokeGetterKeys),
+    );
+    tsGetterLines.push(buildTsGetter('ALL_SPOKES', 'SPOKES', spokeGetterKeys));
+  }
+  if (tokSpokeGetterKeys.length > 0) {
+    solGetterFns.push(
+      buildSolidityGetter(
+        'getAllTokenizationSpokes',
+        'ITokenizationSpoke',
+        'tokenizedSpokes',
+        `${name}TokenizationSpokes`,
+        tokSpokeGetterKeys,
+      ),
+    );
+    tsGetterLines.push(
+      buildTsGetter('ALL_TOKENIZED_SPOKES', 'TOKENIZATION_SPOKES', tokSpokeGetterKeys),
+    );
+  }
+
+  const rawSpokeEntries: {libraryName: string; key: string}[] = [];
+  const rawSpokeTsEntries: {sourceObjectName: string; key: string}[] = [];
+
+  if (treasurySpoke && treasurySpoke !== zeroAddress) {
+    rawSpokeEntries.push({libraryName: `${name}Spokes`, key: 'TREASURY_SPOKE'});
+    rawSpokeTsEntries.push({sourceObjectName: 'SPOKES', key: 'TREASURY_SPOKE'});
+  }
+  for (const key of spokeGetterKeys) {
+    rawSpokeEntries.push({libraryName: `${name}Spokes`, key});
+    rawSpokeTsEntries.push({sourceObjectName: 'SPOKES', key});
+  }
+  for (const key of tokSpokeGetterKeys) {
+    rawSpokeEntries.push({libraryName: `${name}TokenizationSpokes`, key});
+    rawSpokeTsEntries.push({sourceObjectName: 'TOKENIZATION_SPOKES', key});
+  }
+
+  const knownSpokes = new Set<string>();
+  if (treasurySpoke) knownSpokes.add(treasurySpoke.toLowerCase());
+  for (const addr of Object.values(spokesByBaseKey)) knownSpokes.add(addr.toLowerCase());
+  for (const hubData of Object.values(resolvedHubs)) {
+    for (const asset of hubData.assets) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());
+  }
+
+  const unknownSpokes: Hex[] = [];
+  const seenUnknown = new Set<string>();
+  for (const addr of allOnChainSpokes) {
+    const lower = addr.toLowerCase();
+    if (knownSpokes.has(lower) || seenUnknown.has(lower)) continue;
+    seenUnknown.add(lower);
+    unknownSpokes.push(addr);
+  }
+
+  if (rawSpokeEntries.length > 0 || unknownSpokes.length > 0) {
+    solGetterFns.push(
+      buildSolidityRawGetter('getAllSpokesRaw', 'spokes', rawSpokeEntries, unknownSpokes),
+    );
+    tsGetterLines.push(buildTsRawGetter('ALL_SPOKES_RAW', rawSpokeTsEntries, unknownSpokes));
+  }
+
+  if (solGetterFns.length > 0) {
+    appendFileSync(
+      `./src/${name}.sol`,
+      `\nlibrary ${name}Getters {\n${solGetterFns.join('\n\n')}\n}\n`,
+    );
+    appendFileSync(`./src/ts/${name}.ts`, `\n${tsGetterLines.join('\n')}\n`);
   }
 
   return {
