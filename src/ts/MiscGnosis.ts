@@ -14,6 +14,9 @@ export const PROTOCOL_GUARDIAN = '0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6';
 // https://gnosisscan.io/address/0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA
 export const wstETH_stETH_AGGREGATOR = '0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA';
 
+// https://gnosisscan.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+export const ALC_SAFE = '0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b';
+
 // https://gnosisscan.io/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
 export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
 
