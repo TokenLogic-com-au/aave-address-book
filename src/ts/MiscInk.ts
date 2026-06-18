@@ -14,4 +14,7 @@ export const MERKL_DISTRIBUTION_SAFE = '0x89587ebe7cFF64c6527fE2Deccc3521D75763E
 // https://explorer.inkonchain.com/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
 export const ROBOT_GUARDIAN = '0x441E4053fDDF1e1a77a39d00309Af389096d4124';
 
+// https://explorer.inkonchain.com/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+export const AHAB_SAFE = '0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e';
+
 export const CHAIN_ID = 57073;
