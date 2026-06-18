@@ -4652,6 +4652,12 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xAAA973Fe8A6202947e21D0a3a43d8E83ABE35C23": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307": {
+      "name": "GnosisSafeProxy"
     }
   },
   "10": {
@@ -7832,6 +7838,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
+      "name": "GnosisSafeProxy"
     }
   },
   "137": {
@@ -9415,6 +9424,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0x7734280A4337F37Fbf4651073Db7c28C80B339e9": {
+      "name": "InitializableAdminUpgradeabilityProxy"
     }
   },
   "143": {
