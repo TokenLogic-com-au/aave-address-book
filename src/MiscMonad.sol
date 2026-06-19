@@ -8,4 +8,7 @@ library MiscMonad {
 
   // https://monadscan.com/address/0xc887455536CBD4e615B745e70CaCde15B3117e74
   address internal constant PROTOCOL_GUARDIAN = 0xc887455536CBD4e615B745e70CaCde15B3117e74;
+
+  // https://monadscan.com/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+  address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
 }

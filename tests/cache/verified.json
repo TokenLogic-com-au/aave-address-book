@@ -9441,6 +9441,9 @@
     },
     "0xc887455536CBD4e615B745e70CaCde15B3117e74": {
       "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
     }
   },
   "146": {
@@ -13919,6 +13922,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "SafeProxy"
     }
   },
   "42161": {
@@ -17895,6 +17901,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
     }
   },
   "59144": {
