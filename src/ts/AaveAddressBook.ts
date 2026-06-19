@@ -61,6 +61,7 @@ export * as AaveV3InkSepolia from './AaveV3InkSepolia';
 export * as AaveV3Plasma from './AaveV3Plasma';
 export * as AaveV3MegaEth from './AaveV3MegaEth';
 export * as AaveV3XLayer from './AaveV3XLayer';
+export * as AaveV3Monad from './AaveV3Monad';
 export * as AaveV4Ethereum from './AaveV4Ethereum';
 export * as MiscArbitrum from './MiscArbitrum';
 export * as MiscArbitrumSepolia from './MiscArbitrumSepolia';
