@@ -4652,6 +4652,30 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xBD1bc41479D0b58167584980fE57fDA913d4fB73": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x01E69a58ca3ddc695820ce6f66FBdf3fA55D0545": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4Af166c6F2CF882f7B196E3625c3E8f2Fe2a8083": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7433806912Eae67919e66aea853d46Fa0aef98A8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x49d3cdE03813eE32DFD47F6aA3957d5F9CbAB985": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x40606ce958e14AD6BA575B00402d07438c3d58aC": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB92A68763b2F83e094595c7B41a7FB9D0f8Da193": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
