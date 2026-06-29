@@ -117,4 +117,25 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
+
+  // https://etherscan.io/address/0x9bdbB2997D3Aa0bECc56DFC960e0e17d7E9AbAE1
+  address internal constant ACI_VESTING = 0x9bdbB2997D3Aa0bECc56DFC960e0e17d7E9AbAE1;
+
+  // https://etherscan.io/address/0x1aF449783d8EE434a54bA9B1db9186a15B141a2A
+  address internal constant LLAMARISK_VESTING = 0x1aF449783d8EE434a54bA9B1db9186a15B141a2A;
+
+  // https://etherscan.io/address/0x831e9e6D5150c912D0f896142243FF7bC7255D62
+  address internal constant TOKENLOGIC_VESTING = 0x831e9e6D5150c912D0f896142243FF7bC7255D62;
+
+  // https://etherscan.io/address/0x1BDecEAE83c6Ca0f4D78Ee46D40881FAb26b10b1
+  address internal constant CHAOS_LABS_VESTING = 0x1BDecEAE83c6Ca0f4D78Ee46D40881FAb26b10b1;
+
+  // https://etherscan.io/address/0xbC540e0729B732fb14afA240aA5A047aE9ba7dF0
+  address internal constant CHAOS_LABS = 0xbC540e0729B732fb14afA240aA5A047aE9ba7dF0;
+
+  // https://etherscan.io/address/0x9eE16dBDE572886342fc1e2Db8525DEFB007b27c
+  address internal constant LLAMARISK = 0x9eE16dBDE572886342fc1e2Db8525DEFB007b27c;
+
+  // https://etherscan.io/address/0x55Ac902cb75cC15288D473ed8E3E185a75b3f330
+  address internal constant ACI = 0x55Ac902cb75cC15288D473ed8E3E185a75b3f330;
 }
