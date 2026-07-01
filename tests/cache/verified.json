@@ -9639,6 +9639,21 @@
     },
     "0x2f09b9D890535c2b5c81b1b95F7f92eeed5B9d5D": {
       "name": "TransparentProxyFactory"
+    },
+    "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xA5AE05b71c3F170E12E7620Fdf7679721aec1EC8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
+      "name": "GhoBucketSteward"
+    },
+    "0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12": {
+      "name": "GhoCcipSteward"
+    },
+    "0xA5Ba213867E175A182a5dd6A9193C6158738105A": {
+      "name": "GhoAaveSteward"
     }
   },
   "146": {
