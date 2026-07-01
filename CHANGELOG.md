@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.56.1](https://github.com/aave-dao/aave-address-book/compare/v4.56.0...v4.56.1) (2026-06-30)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1457](https://github.com/aave-dao/aave-address-book/issues/1457)) ([8efac82](https://github.com/aave-dao/aave-address-book/commit/8efac82a18251f7892f93edd7d2f691af89b6df7))
+* **cache:** automated cache update - updated addresses ([#1458](https://github.com/aave-dao/aave-address-book/issues/1458)) ([4244443](https://github.com/aave-dao/aave-address-book/commit/42444431b5f7c17fbff4814ef3107f7f95013ef3))
+
+## [4.56.0](https://github.com/aave-dao/aave-address-book/compare/v4.55.8...v4.56.0) (2026-06-29)
+
+
+### Features
+
+* label v4 paxos hub/spoke ([#1449](https://github.com/aave-dao/aave-address-book/issues/1449)) ([b36d9c9](https://github.com/aave-dao/aave-address-book/commit/b36d9c90c5a48b7d3eb0c9d8677f07dcabbb524f))
+
+## [4.55.8](https://github.com/aave-dao/aave-address-book/compare/v4.55.7...v4.55.8) (2026-06-29)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1454](https://github.com/aave-dao/aave-address-book/issues/1454)) ([1087173](https://github.com/aave-dao/aave-address-book/commit/1087173dc0d671e83f05eaf67add4c9622c6a500))
+
+## [4.55.7](https://github.com/aave-dao/aave-address-book/compare/v4.55.6...v4.55.7) (2026-06-29)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1452](https://github.com/aave-dao/aave-address-book/issues/1452)) ([ad35d34](https://github.com/aave-dao/aave-address-book/commit/ad35d3403b02ff0b4ce27acc23b92781b44f78f4))
+
+## [4.55.6](https://github.com/aave-dao/aave-address-book/compare/v4.55.5...v4.55.6) (2026-06-28)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1450](https://github.com/aave-dao/aave-address-book/issues/1450)) ([806b260](https://github.com/aave-dao/aave-address-book/commit/806b26078fd20d947af8a344ccb9b79aa445683b))
+
 ## [4.55.5](https://github.com/aave-dao/aave-address-book/compare/v4.55.4...v4.55.5) (2026-06-26)
 
 
