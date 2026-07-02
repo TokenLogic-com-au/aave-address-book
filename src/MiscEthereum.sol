@@ -142,6 +142,9 @@ library MiscEthereum {
   // https://etherscan.io/address/0x9eE16dBDE572886342fc1e2Db8525DEFB007b27c
   address internal constant LLAMARISK = 0x9eE16dBDE572886342fc1e2Db8525DEFB007b27c;
 
+  // https://etherscan.io/address/0xAA088dfF3dcF619664094945028d44E779F19894
+  address internal constant TOKENLOGIC = 0xAA088dfF3dcF619664094945028d44E779F19894;
+
   // https://etherscan.io/address/0x55Ac902cb75cC15288D473ed8E3E185a75b3f330
   address internal constant ACI = 0x55Ac902cb75cC15288D473ed8E3E185a75b3f330;
 }

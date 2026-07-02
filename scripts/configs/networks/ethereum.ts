@@ -37,6 +37,7 @@ export const ethereumAddresses: NetworkAddresses<{
   SABLIER_DAO_WALLET_VESTING: Hex;
   CHAOS_LABS: Hex;
   LLAMARISK: Hex;
+  TOKENLOGIC: Hex;
   ACI: Hex;
 }> = {
   name: 'Ethereum',
@@ -89,6 +90,7 @@ export const ethereumAddresses: NetworkAddresses<{
     SABLIER_DAO_WALLET_VESTING: '0xCD18eAa163733Da39c232722cBC4E8940b1D8888',
     CHAOS_LABS: '0xbC540e0729B732fb14afA240aA5A047aE9ba7dF0',
     LLAMARISK: '0x9eE16dBDE572886342fc1e2Db8525DEFB007b27c',
+    TOKENLOGIC: '0xAA088dfF3dcF619664094945028d44E779F19894',
     ACI: '0x55Ac902cb75cC15288D473ed8E3E185a75b3f330',
   },
 };

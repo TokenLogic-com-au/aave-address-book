@@ -4730,6 +4730,9 @@
     },
     "0xCD18eAa163733Da39c232722cBC4E8940b1D8888": {
       "name": "Sablier"
+    },
+    "0xAA088dfF3dcF619664094945028d44E779F19894": {
+      "name": "GnosisSafeProxy"
     }
   },
   "10": {
