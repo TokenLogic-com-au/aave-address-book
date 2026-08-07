@@ -20,4 +20,10 @@ library MiscMantle {
 
   // https://mantlescan.xyz/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
+
+  // https://mantlescan.xyz/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+  address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
+
+  // https://mantlescan.xyz/address/0x9DE1d45e2786b03498289959203F25b29B4D1193
+  address internal constant TOKENLOGIC_EXECUTION_SAFE = 0x9DE1d45e2786b03498289959203F25b29B4D1193;
 }
