@@ -16306,6 +16306,12 @@
     },
     "0x4cc755fBFAE135933b64865E7D7Ea6ae778A4D43": {
       "name": "SafeProxy"
+    },
+    "0x2Be58aD215AA8552CB5BD038a88d0dE39d2427BB": {
+      "name": "GsmRegistry"
+    },
+    "0xF5F579926e704C01Bb6e51e18751F5E2b17B0cCC": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42220": {
