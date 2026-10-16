@@ -18967,6 +18967,12 @@
     },
     "0xaf9F841De7477F35D6339943C1E6f0c101bcA621": {
       "name": "AaveGhoCcipBridge"
+    },
+    "0xaf22446124e566e54845f65b722E4dCbf12b650A": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xc918CC59E268000e93F63c5AFff3E3ceF98C6E97": {
+      "name": "AaveOracle"
     }
   },
   "57073": {
