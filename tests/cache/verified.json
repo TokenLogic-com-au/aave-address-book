@@ -5159,6 +5159,12 @@
     },
     "0x6b447A72D8243E96F5782ad6BdffD2dc813bb82E": {
       "name": "EACAggregatorProxy"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
+      "name": "SafeProxy"
+    },
+    "0x205e795336610f5131Be52F09218AF19f0f3eC60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "10": {
@@ -10734,6 +10740,9 @@
     },
     "0xC27a4d7AC0623B129919786d88714eF16132BEaE": {
       "name": "FlashLoanLogic"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
+      "name": "SafeProxy"
     }
   },
   "146": {
@@ -13160,6 +13169,9 @@
     },
     "0xC27a4d7AC0623B129919786d88714eF16132BEaE": {
       "name": "FlashLoanLogic"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
+      "name": "SafeProxy"
     }
   },
   "5000": {
@@ -15066,6 +15078,9 @@
     },
     "0xC27a4d7AC0623B129919786d88714eF16132BEaE": {
       "name": "FlashLoanLogic"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
+      "name": "SafeProxy"
     }
   },
   "9745": {
@@ -15605,6 +15620,9 @@
     },
     "0xC27a4d7AC0623B129919786d88714eF16132BEaE": {
       "name": "FlashLoanLogic"
+    },
+    "0xdeadD8aB03075b7FBA81864202a2f59EE25B312b": {
+      "name": "SafeProxy"
     }
   },
   "42161": {
@@ -17437,6 +17455,9 @@
     },
     "0xC27a4d7AC0623B129919786d88714eF16132BEaE": {
       "name": "FlashLoanLogic"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
+      "name": "SafeProxy"
     }
   },
   "42220": {
@@ -19414,6 +19435,9 @@
     },
     "0xC27a4d7AC0623B129919786d88714eF16132BEaE": {
       "name": "FlashLoanLogic"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
+      "name": "SafeProxy"
     }
   },
   "57073": {
@@ -19892,6 +19916,9 @@
       "name": "EACAggregatorProxy"
     },
     "0x187AAE17d4931310B3fc75743e7F16Bdc9eD77e9": {
+      "name": "SafeProxy"
+    },
+    "0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871": {
       "name": "SafeProxy"
     }
   },

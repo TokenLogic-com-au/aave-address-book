@@ -54,4 +54,8 @@ library MiscXLayer {
 
   // https://www.oklink.com/xlayer/address/0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d
   address internal constant AFC_CEX_EARN_SAFE = 0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d;
+
+  // https://www.oklink.com/xlayer/address/0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871
+  address internal constant ETHENA_SAFE_DAO_WALLET_INCENTIVES =
+    0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871;
 }

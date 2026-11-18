@@ -63,4 +63,8 @@ library MiscAvalanche {
   // https://snowscan.xyz/address/0xb619fA61e795D47f517702e63ce50292370561F1
   address internal constant V4_SECURITY_COUNCIL_EXECUTOR =
     0xb619fA61e795D47f517702e63ce50292370561F1;
+
+  // https://snowscan.xyz/address/0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871
+  address internal constant ETHENA_SAFE_DAO_WALLET_INCENTIVES =
+    0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871;
 }

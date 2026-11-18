@@ -116,6 +116,7 @@ const knownErrors = {
   },
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
+    '0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871': true, // ETHENA_SAFE_DAO_WALLET_INCENTIVES, Safe v1.5.0 proxy not yet verified on explorer
   },
   4326: {
     '0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04': true, // TODO: verification issue on blockscout megaETH for logic libs, fix before merging
@@ -133,11 +134,13 @@ const knownErrors = {
   9745: {
     '0x30559E3d35e33AB69399a3fe9F383d32bd3c016E': true, // PT_sUSDE_18JUN2026 verified but not detecting
     '0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2': true, // PT_USDe_18JUN2026 verified but not detecting
+    '0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871': true, // ETHENA_SAFE_DAO_WALLET_INCENTIVES, Safe v1.5.0 proxy not yet verified on explorer
   },
   196: {
     '0x64768bE1b925Eb04a2Caa2E1F9ffEC2f959cAC9c': true, // PT_USDG_29OCT2026 A_TOKEN, not yet verified on explorer
     '0x11f847ED85657cd066bfC3e9a5b29737aFb85c1E': true, // PT_USDG_29OCT2026 V_TOKEN, not yet verified on explorer
     '0x6052839E52ab454F164ee5668e5B523cF5A389Fc': true, // PT_USDG_29OCT2026 ORACLE, not yet verified on explorer
+    '0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871': true, // ETHENA_SAFE_DAO_WALLET_INCENTIVES, Safe v1.5.0 proxy not yet verified on explorer
   },
 };
 
