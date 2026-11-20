@@ -98,6 +98,7 @@ export * as MiscMegaEth from './MiscMegaEth';
 export * as MiscXLayer from './MiscXLayer';
 export * as MiscMonad from './MiscMonad';
 export * as MiscArc from './MiscArc';
+export * as MiscHyperEvm from './MiscHyperEvm';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
 export * as GhoEthereum from './GhoEthereum';

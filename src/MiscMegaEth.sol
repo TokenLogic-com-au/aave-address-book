@@ -23,4 +23,8 @@ library MiscMegaEth {
 
   // https://mega.etherscan.io/address/0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D
   address internal constant MERKL_DISTRIBUTION_SAFE = 0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D;
+
+  // https://mega.etherscan.io/address/0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871
+  address internal constant ETHENA_SAFE_DAO_WALLET_INCENTIVES =
+    0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871;
 }

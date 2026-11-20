@@ -200,4 +200,12 @@ library MiscEthereum {
   // https://etherscan.io/address/0x14339e2178A954d5FB839D5Ff31644fE0F25F517
   address internal constant V4_SECURITY_COUNCIL_EXECUTOR =
     0x14339e2178A954d5FB839D5Ff31644fE0F25F517;
+
+  // https://etherscan.io/address/0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871
+  address internal constant ETHENA_SAFE_DAO_WALLET_INCENTIVES =
+    0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871;
+
+  // https://etherscan.io/address/0x205e795336610f5131Be52F09218AF19f0f3eC60
+  address internal constant LEGACY_ALC_SAFE_DAO_WALLET_INCENTIVES =
+    0x205e795336610f5131Be52F09218AF19f0f3eC60;
 }

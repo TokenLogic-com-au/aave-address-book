@@ -78,4 +78,8 @@ library MiscBase {
   // https://basescan.org/address/0xA9D9923A1ADC1200771aaaA38CFeD6A5b8483d70
   address internal constant V4_SECURITY_COUNCIL_EXECUTOR =
     0xA9D9923A1ADC1200771aaaA38CFeD6A5b8483d70;
+
+  // https://basescan.org/address/0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871
+  address internal constant ETHENA_SAFE_DAO_WALLET_INCENTIVES =
+    0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871;
 }

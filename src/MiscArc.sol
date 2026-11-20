@@ -18,4 +18,7 @@ library MiscArc {
   // https://explorer.arc.io/address/0x8e79b0541122d3822eC93082cEB1ab03EDBc1Fd5
   address internal constant V4_SECURITY_COUNCIL_EXECUTOR =
     0x8e79b0541122d3822eC93082cEB1ab03EDBc1Fd5;
+
+  // https://explorer.arc.io/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
+  address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
 }

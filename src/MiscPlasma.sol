@@ -69,4 +69,11 @@ library MiscPlasma {
 
   // https://plasmascan.to/address/0x187AAE17d4931310B3fc75743e7F16Bdc9eD77e9
   address internal constant V4_SECURITY_COUNCIL = 0x187AAE17d4931310B3fc75743e7F16Bdc9eD77e9;
+
+  // https://plasmascan.to/address/0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871
+  address internal constant ETHENA_SAFE_DAO_WALLET_INCENTIVES =
+    0x3033D2A52E69bfe4Ae439F61Ca724ca978a1E871;
+
+  // https://plasmascan.to/address/0xdeadD8aB03075b7FBA81864202a2f59EE25B312b
+  address internal constant MERIT_AHAB_SAFE = 0xdeadD8aB03075b7FBA81864202a2f59EE25B312b;
 }
