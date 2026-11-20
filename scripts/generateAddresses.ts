@@ -113,6 +113,7 @@ import { xLayerAddresses } from 'scripts/configs/networks/xlayer';
 import { governanceConfigMonad } from 'scripts/configs/governance/monad';
 import { monadAddresses } from 'scripts/configs/networks/monad';
 import { arcAddresses } from 'scripts/configs/networks/arc';
+import { hyperEvmAddresses } from 'scripts/configs/networks/hyperEvm';
 
 async function main() {
   // cleanup ts artifacts
@@ -264,6 +265,7 @@ async function main() {
     xLayerAddresses,
     monadAddresses,
     arcAddresses,
+    hyperEvmAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

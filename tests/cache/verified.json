@@ -12032,6 +12032,20 @@
       "name": "PoolConfiguratorInstance"
     }
   },
+  "999": {
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x66Ac7223048037826e12cef9a848199e31AEFabE": {
+      "name": "SafeProxy"
+    },
+    "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
+      "name": "SafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    }
+  },
   "1088": {
     "0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731": {
       "name": "RewardsController"
